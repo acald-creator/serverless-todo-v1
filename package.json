@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "analyse": "yarn lint && yarn test",
-    "clean": "rimrag .build .serverless .nyc_output coverage",
+    "clean": "rimraf .build .serverless .nyc_output coverage",
     "coverage": "nyc report --report=text-lcov | coveralls",
     "lint": "eslint . --ext ts,js --no-ignore --fix",
     "sls": "SLS_DEBUG=* serverless deploy --debug -v --aws-profile=serverless",
