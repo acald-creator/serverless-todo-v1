@@ -61,3 +61,5 @@ typings/
 dist
 config/.variables.env
 .dynamodb
+
+package-lock.json
